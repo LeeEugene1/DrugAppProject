@@ -1,0 +1,172 @@
+.scanWrap .title {
+  border-radius: 0 0 40px 40px;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #0d0000 1px 5px 35px -30px;
+  line-height: 25px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin: 0 0 50px 0;
+}
+.scanWrap .title h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.scanWrap .title p {
+  font-weight: bold;
+  font-size: 10px;
+}
+.scanWrap .content {
+  margin: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.scanWrap .content .symptom {
+  margin: 30px 0;
+}
+.scanWrap .content .symptom h2 {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 16px;
+}
+.scanWrap .content .symptom p {
+  font-size: 14px;
+}
+.scanWrap .content .description {
+  margin: 15px 0;
+}
+.scanWrap .content .description h2 {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 16px;
+}
+.scanWrap .content .description .box {
+  display: flex;
+  align-items: center;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0;
+  height: 64px;
+}
+.scanWrap .content .description .box .thumbnail {
+  margin: 0 15px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 36px;
+  border-radius: 36px;
+}
+.scanWrap .content .description .box .thumbnail img {
+  height: 100%;
+}
+.scanWrap .content .description .box .thumbnail ::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #000;
+  border-radius: 36px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  filter: alpha(opacity=10);
+  opacity: 0.1;
+  content: "";
+}
+.scanWrap .content .description .box + .caution {
+  background-color: rgba(255, 160, 0, 0.2);
+}
+.scanWrap .content .description .box .drugWrap .name {
+  font-weight: 800;
+  line-height: 20px;
+}
+.scanWrap .content .description .box .drugWrap .detail {
+  color: #a6bcd0;
+  font-size: 12px;
+  display: inline-block;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scanWrap .content .description .box.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scanWrap .content .description .box.plus .drugWrap {
+  display: flex;
+}
+.scanWrap .content .description .box.plus .drugWrap p {
+  font-weight: 800;
+}
+.scanWrap .content .description .box.plus .drugWrap span {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.scanWrap .content button {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81c784;
+  width: 100%;
+  height: 52px;
+  border-radius: 52px;
+  color: #fff;
+  font-weight: bold;
+}
+.scanWrap .content:focus {
+  outline: none;
+  border: 0;
+}
+.scanWrap .content:active {
+  outline: none;
+  border: 0;
+}
+
+.modal .modal_overlay {
+  background-color: rgba(0, 0, 0, 0.16);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal .modal_content {
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  /* padding: 50px 100px; */
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  left: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  animation: show 0.2s;
+}
+@keyframes show {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.modal .modal_content .closeButton {
+  font-size: 5em;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

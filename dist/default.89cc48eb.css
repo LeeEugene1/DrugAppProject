@@ -24,7 +24,7 @@ body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,
 /* div,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,button,pre,a{
 transform:skew(-0.007deg);
 } */
-h1,h2,h3,h4,h5,h6,form,fieldset,p,button{
+h1,h2,h3,h4,h5,h6,form,fieldset,p,button,span{
 transform:skew(-0.03deg);
 }
 

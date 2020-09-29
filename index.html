@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
     <div class="scanWrap">
@@ -15,7 +16,7 @@
             <h1>홍길동</h1>
             <p>2020.09.20 새서울내과</p>
         </header>    
-        <div class="content">
+        <section class="content">
             <div class="symptom">
                 <h2>증상</h2>
                 <p>소화불량, 속쓰림, 신물, 복부 불쾌감의 가벼운 복통, 구토, 두통, 발열</p>
@@ -39,7 +40,6 @@
                         </div>
                     </div>
                 </div> -->
-
                 <div class="box caution" id="open">
                     <div class="thumbnail">
                         <img src="./img/A11A0740A009501.jpg" alt="">
@@ -52,11 +52,39 @@
                 <div class="modal hidden">
                     <div class="modal_overlay"></div>
                     <div class="modal_content">
-                        <h1>hi</h1>
-                        <div class="closeButton">X</div>
+                        <div class="modal_close">
+                            <div class="icon">
+                                <img src="img/icon-caution.png" alt="">
+                                <p>DUR 경고</p>
+                            </div>
+                            <div class="closeButton"><img src="img/icon.png" alt=""></div>
+                        </div>
+                        <div class="modal_boxWrap">
+                            <div class="box">
+                                <p>근화카리메트산</p>
+                                <span>주성분 표시</span>
+                            </div>
+                            <div class="box">
+                                <p>마그일정</p>
+                                <span>주성분 표시</span>
+                            </div>
+                        </div>
+                        <div class="modal_accordion">
+                            <div class="arrow">
+                                <p>DUR정보</p>  
+                                <i class="xi-angle-down"></i>
+                            </div>
+                            <span>병용금기(1급)</span>                      
+                        </div>
+                        <div class="modal_accordion">
+                            <div class="arrow">
+                                <p>Drugs.com</p>  
+                                <i class="xi-angle-down"></i>
+                            </div>
+                            <span>GENERALLY AVOID</span>
+                        </div>
                     </div>
                 </div>
-
                 <div class="box plus">
                     <div class="drugWrap">
                         <p>+</p>
@@ -67,11 +95,11 @@
                 </div>
             </div>
             <button>상호작용확인</button>
-        </div>
-
+        </section>
     </div>
-    <!-- <script src="js/modal.js"></script> -->
-    <script>
+    <script src="js/modal.js"></script>
+    <script src="js/accordion.js"></script>
+    <!-- <script>
         const openButton = document.querySelector('#open');
         const modal = document.querySelector('.modal');
         const overlay = document.querySelector('.modal_overlay');
@@ -89,7 +117,7 @@
             if(event.target == overlay){
                 modal.classList.add('hidden');
             }
-});
-    </script>
+        });
+    </script> -->
 </body>
 </html>

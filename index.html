@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.scss">
+    <style>
+    </style>
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="default.css">
@@ -32,14 +34,6 @@
                         <p class="detail">화합물1, 화합물2, 화합물3, 화합물1, 화합물2, 화합물3화합물1, 화합물2, 화합물3</p>
                     </div>
                 </div>
-                <!-- <div class="modalWrapper">
-                    <div class="modal">
-                        <div class="modalTitle">ddd</div>
-                        <div class="closeWrapper">
-                            <button>닫기</button>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="box caution" id="open">
                     <div class="thumbnail">
                         <img src="./img/A11A0740A009501.jpg" alt="">
@@ -54,10 +48,10 @@
                     <div class="modal_content">
                         <div class="modal_close">
                             <div class="icon">
-                                <img src="img/icon-caution.png" alt="">
+                                <i class="xi-error"></i>
                                 <p>DUR 경고</p>
                             </div>
-                            <div class="closeButton"><img src="img/icon.png" alt=""></div>
+                            <div class="closeButton"><i class="xi-close"></i></div>
                         </div>
                         <div class="modal_boxWrap">
                             <div class="box">
@@ -69,55 +63,56 @@
                                 <span>주성분 표시</span>
                             </div>
                         </div>
-                        <div class="modal_accordion">
-                            <div class="arrow">
-                                <p>DUR정보</p>  
-                                <i class="xi-angle-down"></i>
+                        <div class="scroll">
+                            <div class="modal_accordion">
+                                <div class="accordion_btn">
+                                    <div class="arrow">
+                                        <p>상호작용</p>  
+                                        <i class="xi-angle-down"></i>
+                                        <!-- <i class="xi-angle-up"></i> -->
+                                    </div>
+                                    <span>병용금기(1급)</span>                      
+                                </div>
+                                <div class="accordion_content">
+                                    <p class="small">위험성 검토결과</p>
+                                    <p class="large">두 성분을 함께 복용 시 부작용이 일어날 수 있습니다. <span>의사, 약사와 상담 후 복용하세요.</span></p>
+                                    <p class="large">두 성분을 함께 복용 시 부작용이 일어날 수 있습니다. <span>의사, 약사와 상담 후 복용하세요.</span></p>
+    
+                                </div>
                             </div>
-                            <span>병용금기(1급)</span>                      
+                            <div class="modal_accordion">
+                                <div class="accordion_btn">
+                                    <div class="arrow">
+                                        <p>DUR정보</p>  
+                                        <i class="xi-angle-down"></i>
+                                    </div>
+                                    <span>병용금기(1급)</span>                      
+                                </div>
+                                <div class="accordion_content" style="display:block">
+                                    <p class="small">위험성 검토결과</p>
+                                    <p class="large">두 성분을 함께 복용 시 부작용이 일어날 수 있습니다. <span>의사, 약사와 상담 후 복용하세요.</span></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal_accordion">
-                            <div class="arrow">
-                                <p>Drugs.com</p>  
-                                <i class="xi-angle-down"></i>
-                            </div>
-                            <span>GENERALLY AVOID</span>
+                        <div class="buttonWrap">
+                            <button class="btn orangeLine">공유</button>
+                            <button class="btn orange">확인</button>
                         </div>
                     </div>
                 </div>
                 <div class="box plus">
                     <div class="drugWrap">
-                        <p>+</p>
+                        <p><i class="xi-plus-min"></i></p>
                         <span>
                             의약품 추가하기
                         </span>
                     </div>
                 </div>
             </div>
-            <button>상호작용확인</button>
+                <button class="btn green">상호작용확인</button>
         </section>
     </div>
     <script src="js/modal.js"></script>
     <script src="js/accordion.js"></script>
-    <!-- <script>
-        const openButton = document.querySelector('#open');
-        const modal = document.querySelector('.modal');
-        const overlay = document.querySelector('.modal_overlay');
-        const closeButton = document.querySelector('.closeButton');
-
-        openButton.addEventListener('click',()=>{
-            modal.classList.remove('hidden');
-        });
-
-        closeButton.addEventListener('click',()=>{
-            modal.classList.add('hidden');
-        });
-
-        document.addEventListener('click',(event)=>{
-            if(event.target == overlay){
-                modal.classList.add('hidden');
-            }
-        });
-    </script> -->
 </body>
 </html>

@@ -19,7 +19,7 @@
 }
 .scanWrap .title p {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
 }
 .scanWrap .content {
   margin: 15px 0;
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   background-color: #f0f4f8;
-  border-radius: 10px;
+  border-radius: 11px;
   width: 100%;
   margin: 10px 0;
   height: 64px;
@@ -111,17 +111,39 @@
   font-size: 12px;
   font-weight: bold;
 }
-.scanWrap .content button {
+.scanWrap .content .buttonWrap {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.scanWrap .content .btn {
   margin: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #81c784;
-  width: 100%;
-  height: 52px;
   border-radius: 52px;
   color: #fff;
   font-weight: bold;
+}
+.scanWrap .content .btn.green {
+  background-color: #81c784;
+  width: 100%;
+  height: 52px;
+}
+.scanWrap .content .btn.orange {
+  background-color: #f2a33a;
+  width: 152px;
+  height: 40px;
+}
+.scanWrap .content .btn.orangeLine {
+  border: 1px solid #f2a33a;
+  background: #fff;
+  color: #f2a33a;
+  width: 152px;
+  height: 40px;
 }
 .scanWrap .content:focus {
   outline: none;
@@ -165,7 +187,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 16px;
   height: 32px;
   background: #f2a33a;
   border-radius: 10px 10px 0 0;
@@ -173,9 +195,13 @@
 .modal .modal_content .modal_close .icon {
   display: flex;
 }
-.modal .modal_content .modal_close img {
-  width: 21px;
+.modal .modal_content .modal_close i {
+  font-size: 20px;
   margin-right: 8px;
+  color: #fff;
+}
+.modal .modal_content .modal_close i:last-child {
+  margin-right: 0;
 }
 .modal .modal_content .modal_close p {
   color: #fff;
@@ -207,9 +233,13 @@
 }
 .modal .modal_content .modal_boxWrap .box span {
   color: #f2a33a;
-  font-size: 10px;
+  font-size: 11px;
 }
-.modal .modal_content .modal_accordion {
+.modal .modal_content .scroll {
+  height: 300px;
+  overflow-y: auto;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_btn {
   width: 100%;
   height: 64px;
   background-color: #f0f4f8;
@@ -218,18 +248,36 @@
   flex-direction: column;
   justify-content: center;
   line-height: 1.5;
-  padding: 8px;
+  padding: 8px 16px;
   box-sizing: border-box;
 }
-.modal .modal_content .modal_accordion span {
+.modal .modal_content .scroll .modal_accordion span {
   font-weight: 800;
 }
-.modal .modal_content .modal_accordion .arrow {
+.modal .modal_content .scroll .modal_accordion .arrow {
   display: flex;
   justify-content: space-between;
 }
-.modal .modal_content .modal_accordion .arrow p {
-  font-size: 10px;
+.modal .modal_content .scroll .modal_accordion .arrow p {
+  font-size: 11px;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_content {
+  display: none;
+  padding: 16px;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_content .small {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_content .large {
+  font-size: 16px;
+  font-weight: 800;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_content .large span {
+  color: #f2a33a;
+}
+.modal .modal_content .scroll .modal_accordion .accordion_btn--active + .accordion_content {
+  display: block;
 }
 
 .modal.hidden {

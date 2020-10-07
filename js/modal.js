@@ -15,4 +15,4 @@
             if(event.target == overlay){
                 modal.classList.add('hidden');
             }
-});
+        });

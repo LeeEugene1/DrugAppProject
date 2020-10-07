@@ -73,4 +73,4 @@ keyframe을 적용하여 위에서 아래로 올라오는 효과를 적용하였
 
 구현: <a href="https://leeeugene1.github.io/DrugAppProject/">DrugAppProject</a></p>
 --
-연락: <a href="mailto:mail@gmail.com">happyHackingEugene@gmail.com</a></p>
+연락: <a href="mailto:happyHackingEugene@gmail.com">happyHackingEugene@gmail.com</a></p>

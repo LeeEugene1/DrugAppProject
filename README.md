@@ -6,6 +6,8 @@
 > 
 <br>
 
+![ezgif-3-1a46f635638a](https://user-images.githubusercontent.com/59987309/96550384-c3693a80-12eb-11eb-8a0c-cc7d4922a511.gif)
+
 ![easydrug1](https://user-images.githubusercontent.com/59987309/95147062-96306e80-07ba-11eb-9143-064ab1d0dc3c.png)<br>
 약품리스트, 경고 약품명을 클릭하면 모달창이뜬다.<br><br>
 

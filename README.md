@@ -5,6 +5,7 @@
 > 제플린으로 받은 디자인의 폰트가 많이 작은 느낌이었다. 역시나 네이버 모바일을 참고해보니 최소폰트크기가 12pt이상이고 작다고 느낀 제플린의 폰트크기는 10pt였다. 웹상에서는 중요하지않은 내용들은 10pt로 가능할수있지만 모바일상에서는 다소 확장할필요가있다고 팀원과 PM에게 의견을 전달했다. 그결과 11~12pt로 크기를 키웠다.<br>
 > 
 <br>
+![drugscreenshot](https://user-images.githubusercontent.com/59987309/104851758-44ab8a00-593a-11eb-8856-c17fd910eb26.jpg)
 
 ![ezgif-3-1a46f635638a](https://user-images.githubusercontent.com/59987309/96550384-c3693a80-12eb-11eb-8a0c-cc7d4922a511.gif)
 
